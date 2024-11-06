@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Portfolio</title>
+  <link rel="stylesheet" href="work.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="Home.html" class="back-button">Back</a>
+        <ul class="nav main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="banner">
+    <div class="banner-content">
+      <h3>Working College Student</h3>
+      <h6>as</h6>
+      <h1>Website Developer</h1>
+    </div>
+  </section>
+
+   <!-- About Section -->
+   <section class="about" id="about">
+    <div class="about-container">
+        <div class="profile-picture">
+            <img src="Images/Lifestyle_Work.png" alt="Profile Picture">
+        </div>
+        <h2>About Me</h2>
+        <p>Gabriel, Jericho. A 2nd Year BSIT student balancing studies and work as a passionate Website Developer.</p>
+        <p>I have a passion for crafting clean, functional, and visually appealing interfaces that provide an exceptional user experience. Let's create something amazing together!</p>
+    </div>
+</section>
+
+  <!-- Works Section -->
+  <section class="works" id="works">
+    <div class="container">
+      <h2>Portfolio Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+            <img class="project-thumbnail" src="Images/Project 1.png" alt="Project 1 Thumbnail">
+            <h3 class="project-title">Project 1: <br>Chamber Website</br></h3>
+            <p class="project-description">
+              Responsive Chamber Website is a non-profit organization in service to the Filipino-Americans in Utah.
+            </p>
+            <p class="tech-stack">Tech Stack: HTML, CSS, PHP, MySQL, Wordpress</p>
+            <a href="https://pacciutah.org" target="_blank"><button class="view-details">View Website</button></a>
+          </div>
+          <div class="project-item">
+            <img class="project-thumbnail" src="Images/Project 2.png" alt="Project 1 Thumbnail">
+            <h3 class="project-title">Project 2: <br> Real Estate Website </br></h3>
+            <p class="project-description">
+                Explore to buy, sell, or rent your dream home. Immerse yourself in virtual tours of stunning rooms and engage in local events and ventures. 
+            </p>
+            <p class="tech-stack">Tech Stack: HTML, CSS, PHP, MySQL, Wordpress</p>
+            <a href="https://staging.parkcityhomesbyla.com/" target="_blank"><button class="view-details">View Website</button></a>
+          </div>
+          <div class="project-item">
+            <img class="project-thumbnail" src="Images/Project 3.png" alt="Project 1 Thumbnail">
+            <h3 class="project-title">Project 3: <br>Prajekpro Website</br></h3>
+            <p class="project-description">
+                Prajekpro, your number one source for service Pros in the Philippines. Conveniency, reliability, and trustworthy. These three are our main focus.
+            </p>
+            <p class="tech-stack">Tech Stack: HTML, CSS, PHP, MySQL, Wordpress</p>
+            <a href="https://prajekpro.com" target="_blank"><button class="view-details">View Website</button></a>
+          </div>
+                              
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">HTML</span>
+        <span class="skill-item">CSS</span>
+        <span class="skill-item">PHP</span>
+        <span class="skill-item">MySQL</span>
+        <span class="skill-item">React</span>
+        <span class="skill-item">Node.js</span>
+        <span class="skill-item">Git</span>
+        <span class="skill-item">Bootstrap</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="game">
+    <h2>Find Me!</h2>
+    <p>Click on the right area to find me!</p>
+    
+    <img src="Images/Kamikazee Game.jpeg" usemap="#game-map" alt="Find Me Map" class="map-image">
+
+    <map name="game-map">
+        <area shape="rect" coords="968,176,1012,270" title="Correct Area!" href="#correct" onclick="document.getElementById('result').src='correct.html';">
+        <area shape="rect" coords="3,4,975,825" title="Wrong Area!" href="#wrong" onclick="document.getElementById('result').src='wrong.html';">
+        <area shape="rect" coords="970,272,1237,827" title="Wrong Area!" href="#wrong" onclick="document.getElementById('result').src='wrong.html';">
+        <area shape="rect" coords="1013,1,1237,279" title="Wrong Area!" href="#wrong" onclick="document.getElementById('result').src='wrong.html';">
+    </map>
+
+    <iframe id="result" src="about:blank" width="300" height="200" class="minimized-iframe"></iframe>
+</section>
+
+<div id="close"></div>
+
+  <!-- Contact Section -->
+<section class="contacts" id="contacts">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p class="contact-description">
+        Feel free to reach out for collaborations, project inquiries, or just to say hi!
+      </p>
+      <div class="contact-content">
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
+          <a href="https://Instagram.com" target="_blank" class="social-icon">Instagram</a>
+          <a href="https://Whatsapp.com" target="_blank" class="social-icon">Whatsapp</a>
+          <a href="https://Facebook.com" target="_blank" class="social-icon">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Scroll Up Button -->
+  <a href="#home" class="scroll-up" title="Back to top">↑</a>
+</body>
+</html>

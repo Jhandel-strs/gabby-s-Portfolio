@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wrong Area</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 75, 75, 0.9); /* Error color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .close-btn {
+            cursor: pointer;
+            background-color: #ff4b4b;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Oops!</h2>
+    <p>Wrong Area! Try again!</p>
+    <button class="close-btn" onclick="window.parent.document.getElementById('result').src='about:blank';">Close</button>
+</body>
+</html>

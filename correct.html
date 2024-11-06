@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 255, 198, 0.9); /* Success color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .close-btn {
+            cursor: pointer;
+            background-color: #ff4b4b;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Congratulations!</h2>
+    <p>You found me! 🎉</p>
+    <button class="close-btn" onclick="window.parent.document.getElementById('result').src='about:blank';">Close</button>
+</body>
+</html>
